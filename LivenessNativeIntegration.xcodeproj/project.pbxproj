@@ -6,8 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		518617943BEA53EE579E5C1A /* Pods_LivenessNativeIntegration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 533D629F1C67337AAE360666 /* Pods_LivenessNativeIntegration.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		533D629F1C67337AAE360666 /* Pods_LivenessNativeIntegration.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LivenessNativeIntegration.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E66A1E792DC0A9C200A7C65F /* LivenessNativeIntegration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LivenessNativeIntegration.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA591E179FF4B75614BCFAB3 /* Pods-LivenessNativeIntegration.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LivenessNativeIntegration.release.xcconfig"; path = "Target Support Files/Pods-LivenessNativeIntegration/Pods-LivenessNativeIntegration.release.xcconfig"; sourceTree = "<group>"; };
+		EBF7847FE20B5F9CCCF7BBBC /* Pods-LivenessNativeIntegration.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LivenessNativeIntegration.debug.xcconfig"; path = "Target Support Files/Pods-LivenessNativeIntegration/Pods-LivenessNativeIntegration.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -36,17 +43,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				518617943BEA53EE579E5C1A /* Pods_LivenessNativeIntegration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		48B79274BD54EC92FBD1F572 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EBF7847FE20B5F9CCCF7BBBC /* Pods-LivenessNativeIntegration.debug.xcconfig */,
+				EA591E179FF4B75614BCFAB3 /* Pods-LivenessNativeIntegration.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A4FFB73AB7441991487BCBBF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				533D629F1C67337AAE360666 /* Pods_LivenessNativeIntegration.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E66A1E702DC0A9C200A7C65F = {
 			isa = PBXGroup;
 			children = (
 				E66A1E7B2DC0A9C200A7C65F /* LivenessNativeIntegration */,
 				E66A1E7A2DC0A9C200A7C65F /* Products */,
+				48B79274BD54EC92FBD1F572 /* Pods */,
+				A4FFB73AB7441991487BCBBF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,9 +92,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E66A1E8C2DC0A9C400A7C65F /* Build configuration list for PBXNativeTarget "LivenessNativeIntegration" */;
 			buildPhases = (
+				943C70B6F3CFD48849D7CE16 /* [CP] Check Pods Manifest.lock */,
+				5041F99DE6F078AC6B75160A /* [CP-User] Run Flutter Build gateway Script */,
 				E66A1E752DC0A9C200A7C65F /* Sources */,
 				E66A1E762DC0A9C200A7C65F /* Frameworks */,
 				E66A1E772DC0A9C200A7C65F /* Resources */,
+				53E1E49C0D0347F7852E93FB /* [CP] Embed Pods Frameworks */,
+				E512739B42FBB3351C79663C /* [CP-User] Embed Flutter Build gateway Script */,
 			);
 			buildRules = (
 			);
@@ -77,8 +108,6 @@
 				E66A1E7B2DC0A9C200A7C65F /* LivenessNativeIntegration */,
 			);
 			name = LivenessNativeIntegration;
-			packageProductDependencies = (
-			);
 			productName = LivenessNativeIntegration;
 			productReference = E66A1E792DC0A9C200A7C65F /* LivenessNativeIntegration.app */;
 			productType = "com.apple.product-type.application";
@@ -127,6 +156,68 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5041F99DE6F078AC6B75160A /* [CP-User] Run Flutter Build gateway Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "[CP-User] Run Flutter Build gateway Script";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/../gateway/.ios/Flutter/flutter_export_environment.sh\"\nexport VERBOSE_SCRIPT_LOGGING=1 && \"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh build";
+		};
+		53E1E49C0D0347F7852E93FB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LivenessNativeIntegration/Pods-LivenessNativeIntegration-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LivenessNativeIntegration/Pods-LivenessNativeIntegration-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LivenessNativeIntegration/Pods-LivenessNativeIntegration-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		943C70B6F3CFD48849D7CE16 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LivenessNativeIntegration-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E512739B42FBB3351C79663C /* [CP-User] Embed Flutter Build gateway Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "[CP-User] Embed Flutter Build gateway Script";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/../gateway/.ios/Flutter/flutter_export_environment.sh\"\nexport VERBOSE_SCRIPT_LOGGING=1 && \"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh embed_and_thin";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E66A1E752DC0A9C200A7C65F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,12 +231,14 @@
 /* Begin XCBuildConfiguration section */
 		E66A1E8D2DC0A9C400A7C65F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBF7847FE20B5F9CCCF7BBBC /* Pods-LivenessNativeIntegration.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9FW5BSB866;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LivenessNativeIntegration/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -153,12 +246,13 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.kreditplus.kpm.quality.LivenessNativeIntegration;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kreditplus.kpm.quality;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -168,12 +262,14 @@
 		};
 		E66A1E8E2DC0A9C400A7C65F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA591E179FF4B75614BCFAB3 /* Pods-LivenessNativeIntegration.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9FW5BSB866;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LivenessNativeIntegration/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -181,12 +277,13 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.kreditplus.kpm.quality.LivenessNativeIntegration;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kreditplus.kpm.quality;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
