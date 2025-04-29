@@ -1,0 +1,51 @@
+PODS:
+  - Flutter (1.0.0)
+  - flutter_package_core (0.0.1):
+    - Flutter
+  - flutter_package_plugin_liveness (0.0.1):
+    - Flutter
+  - flutter_secure_storage (6.0.0):
+    - Flutter
+  - FlutterPluginRegistrant (0.0.1):
+    - Flutter
+    - flutter_package_core
+    - flutter_package_plugin_liveness
+    - flutter_secure_storage
+    - path_provider_foundation
+  - path_provider_foundation (0.0.1):
+    - Flutter
+    - FlutterMacOS
+
+DEPENDENCIES:
+  - Flutter (from `../gateway/.ios/Flutter`)
+  - flutter_package_core (from `../gateway/.ios/.symlinks/plugins/flutter_package_core/ios`)
+  - flutter_package_plugin_liveness (from `../gateway/.ios/.symlinks/plugins/flutter_package_plugin_liveness/ios`)
+  - flutter_secure_storage (from `../gateway/.ios/.symlinks/plugins/flutter_secure_storage/ios`)
+  - FlutterPluginRegistrant (from `../gateway/.ios/Flutter/FlutterPluginRegistrant`)
+  - path_provider_foundation (from `../gateway/.ios/.symlinks/plugins/path_provider_foundation/darwin`)
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: "../gateway/.ios/Flutter"
+  flutter_package_core:
+    :path: "../gateway/.ios/.symlinks/plugins/flutter_package_core/ios"
+  flutter_package_plugin_liveness:
+    :path: "../gateway/.ios/.symlinks/plugins/flutter_package_plugin_liveness/ios"
+  flutter_secure_storage:
+    :path: "../gateway/.ios/.symlinks/plugins/flutter_secure_storage/ios"
+  FlutterPluginRegistrant:
+    :path: "../gateway/.ios/Flutter/FlutterPluginRegistrant"
+  path_provider_foundation:
+    :path: "../gateway/.ios/.symlinks/plugins/path_provider_foundation/darwin"
+
+SPEC CHECKSUMS:
+  Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
+  flutter_package_core: 925fb997d358780e1c2de5f04993339d6bf06fe0
+  flutter_package_plugin_liveness: 71569d5f9cde8e4a63ed111a6f6e8fc6c872b9fa
+  flutter_secure_storage: 1ed9476fba7e7a782b22888f956cce43e2c62f13
+  FlutterPluginRegistrant: 1355d4553278c2c34442ab255858e9baf9402f1a
+  path_provider_foundation: 080d55be775b7414fd5a5ef3ac137b97b097e564
+
+PODFILE CHECKSUM: 23c4bd1560673c44c56b1fb23adf6bcfd38d3dd1
+
+COCOAPODS: 1.16.2

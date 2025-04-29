@@ -1,0 +1,8 @@
+${PODS_ROOT}/Target Support Files/Pods-LivenessNativeIntegration/Pods-LivenessNativeIntegration-frameworks.sh
+${BUILT_PRODUCTS_DIR}/flutter_package_core/flutter_package_core.framework
+${PODS_ROOT}/../../gateway/.ios/.symlinks/plugins/flutter_package_plugin_liveness/ios/Frameworks/AFNetworking.framework
+${PODS_ROOT}/../../gateway/.ios/.symlinks/plugins/flutter_package_plugin_liveness/ios/Frameworks/AKFaceRecognizer.framework
+${PODS_ROOT}/../../gateway/.ios/.symlinks/plugins/flutter_package_plugin_liveness/ios/Frameworks/Lottie.framework
+${BUILT_PRODUCTS_DIR}/flutter_package_plugin_liveness/flutter_package_plugin_liveness.framework
+${BUILT_PRODUCTS_DIR}/flutter_secure_storage/flutter_secure_storage.framework
+${BUILT_PRODUCTS_DIR}/path_provider_foundation/path_provider_foundation.framework

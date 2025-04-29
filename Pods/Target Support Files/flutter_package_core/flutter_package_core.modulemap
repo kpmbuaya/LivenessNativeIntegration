@@ -1,0 +1,6 @@
+framework module flutter_package_core {
+  umbrella header "flutter_package_core-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module flutter_package_plugin_liveness {
+  umbrella header "flutter_package_plugin_liveness-umbrella.h"
+
+  export *
+  module * { export * }
+}
